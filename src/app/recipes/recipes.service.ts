@@ -1,4 +1,5 @@
 import { EventEmitter, Injectable } from '@angular/core';
+import { Ingredient } from '../shared/ingredient.model';
 import { Recipe } from './recipe.model';
 
 @Injectable({
@@ -11,7 +12,8 @@ export class RecipesService {
     new Recipe(
       'Omelette du fromage',
       'omlette with cottage cheese',
-      'https://live.staticflickr.com/4198/34816100336_4a4a79baae_c.jpg'
+      'https://live.staticflickr.com/4198/34816100336_4a4a79baae_c.jpg',
+      [new Ingredient('egg', 3), new Ingredient('fromage', 1)]
     ),
   ];
 
