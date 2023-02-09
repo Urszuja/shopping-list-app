@@ -15,6 +15,12 @@ export class RecipesService {
       'https://live.staticflickr.com/4198/34816100336_4a4a79baae_c.jpg',
       [new Ingredient('egg', 3), new Ingredient('fromage', 1)]
     ),
+    new Recipe(
+      'Kopia omletu',
+      'omlette with cottage cheese',
+      'https://live.staticflickr.com/4198/34816100336_4a4a79baae_c.jpg',
+      [new Ingredient('egg', 3), new Ingredient('fromage', 1)]
+    ),
   ];
 
   constructor() {}
@@ -23,7 +29,7 @@ export class RecipesService {
     return this.recipes.slice();
   }
 
-  getRecipe(id: number) {
-    return this.recipes.slice()[id];
+  getRecipe(index: number) {
+    return this.recipes[index];
   }
 }
